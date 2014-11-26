@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+	<meta charset="utf-8"/>
+	<title></title>
+	<script src="bower_components/angular/angular.min.js"></script>
+	<script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+	<script src="bundle.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/less/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="styles/index.css">
+</head>
+<body>
+	<header></header>
+	<section class="main clearfix">
+		<aside>
+			<h2>学习与测试</h2>
+			<ul>
+				<li><a ui-sref="state1">指令测试</a></li>
+				<li><a ui-sref="app.state2">其它</a></li>
+			</ul>
+			<ul>
+				<li><a ui-sref="question.watch">$scope.$watch vs $scope.$watchCollection</a></li>
+			</ul>
+		</aside>
+		<section class="content">
+			<ui-view></ui-view>
+		</section>
+	</section>
+</body>
+</html>
